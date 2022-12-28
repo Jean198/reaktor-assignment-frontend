@@ -1,5 +1,6 @@
 import './App.css';
 import DronesTable from './components/dronesTable/DronesTable';
+export const URL= process.env.REACT_APP_URL_ENDPOINT;
 
 function App() {
   return (
@@ -8,5 +9,7 @@ function App() {
     </div>
   );
 }
+
+export default App;
 
 
