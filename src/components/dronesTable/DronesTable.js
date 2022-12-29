@@ -22,9 +22,30 @@ const DronesTable = () => {
   }, []);
 
   return (
-    <div>
-      <Drone />
-    </div>
+    <>
+      <div className="table-responsive">
+        <table className=" table">
+          <thead className="table-dark">
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Name</th>
+              <th scope="col">email</th>
+              <th scope="col">phone</th>
+              <th scope="col">Distance to the Nest</th>
+              <th scope="col">Last seen</th>
+            </tr>
+          </thead>
+          <tbody>
+            {dronesData &&
+              dronesData.map((drone, index) => {
+                return (
+                  <Drone drone={drone} index={index}/>
+                );
+              })}
+          </tbody>
+        </table>
+      </div>
+    </>
   );
 }
 

@@ -4,7 +4,8 @@ export const URL= process.env.REACT_APP_URL_ENDPOINT;
 
 function App() {
   return (
-    <div className="App">
+    <div className="container text-center list-container">
+      <h3 className='title'>BIRDNEST PROJECT</h3>
       <DronesTable/>
     </div>
   );

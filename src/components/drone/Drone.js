@@ -1,11 +1,18 @@
-import React from 'react'
+import React from "react";
 
-const Drone = () => {
+const Drone = ({ drone, index }) => {
   return (
-    <div>
+    <>
+      <tr key={drone.droneSerialNum}>
+        <th scope="row">{index + 1}</th>
+        <td>{drone.pilotName}</td>
+        <td>{drone.email}</td>
+        <td>{drone.phone}</td>
+        <td>{drone.distance} Meters</td>
+        <td>{drone.lastSeen} mins ago</td>
+      </tr>
+    </>
+  );
+};
 
-    </div>
-  )
-}
-
-export default Drone
+export default Drone;
