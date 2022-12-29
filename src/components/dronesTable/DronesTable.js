@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Drone from "../drone/Drone";
 import axios from "axios";
 import { URL } from "../../App";
+import birdnest from "../../assets/images/birdnest.png"
+import './dronesTable.css'
 
 
 
@@ -23,6 +25,9 @@ const DronesTable = () => {
 
   return (
     <>
+      <div>
+        <img src={birdnest} alt="" className="birdnest-image" />
+      </div>
       <div className="table-responsive">
         <table className=" table">
           <thead className="table-dark">
