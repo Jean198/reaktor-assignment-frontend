@@ -1,0 +1,11 @@
+.birdnest-image {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 3%;
+  }
+  .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
