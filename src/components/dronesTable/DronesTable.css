@@ -9,3 +9,11 @@
     align-items: center;
     height: 100px;
   }
+
+  .scrollable{
+    height:400px;
+    overflow: scroll;
+  }
+
+
+thead th { position: sticky; top: 0; z-index: 1; }

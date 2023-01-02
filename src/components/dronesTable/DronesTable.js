@@ -19,7 +19,7 @@ const DronesTable = () => {
           setIsLoading(false); // Hidding the loader
           setDronesData(response.data); //Storing the data in the state array
         });
-      }, 10000); //Fetching the data every 10 seconds
+      }, 5000); //Fetching the data every 5 seconds
       return () => clearInterval(interval);
     } catch (error) {
       console.log(error.message);
@@ -28,15 +28,13 @@ const DronesTable = () => {
 
   return (
     <>
-      <div>
-        <img src={birdnest} alt="" className="birdnest-image" />
-      </div>
+
       {
         <div className="loader">
           {isLoading ? <img src={loader} alt="" /> : null} {/* Showing or hidding the loader*/}
         </div>
       }
-      <div className="table-responsive">
+      <div className="table-responsive scrollable">
         <table className=" table">
           <thead className="table-dark">
             <tr>
