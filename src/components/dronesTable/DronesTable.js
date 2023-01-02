@@ -42,7 +42,7 @@ const DronesTable = () => {
               <th scope="col">Name</th>
               <th scope="col">email</th>
               <th scope="col">phone</th>
-              <th scope="col">Distance to the Nest</th>
+              <th scope="col">Closest distance to the Nest</th>
               <th scope="col">Last seen</th>
             </tr>
           </thead>
