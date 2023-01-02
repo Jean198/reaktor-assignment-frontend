@@ -4,7 +4,7 @@ import axios from "axios";
 import { URL } from "../../App";
 import birdnest from "../../assets/images/birdnest.png";
 import loader from "../../assets/images/loader.gif";
-import "./dronesTable.css";
+import "./DronesTable.css";
 
 // The drones Table
 const DronesTable = () => {
