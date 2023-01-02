@@ -1,5 +1,6 @@
 import React from "react";
 
+// The drone information displayed as a row in the table
 const Drone = ({ drone, index }) => {
   return (
     <>
